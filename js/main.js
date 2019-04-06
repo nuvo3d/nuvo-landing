@@ -126,7 +126,7 @@ window.requestAnimationFrame(loop);}
 function loop(){window.requestAnimationFrame(loop);drawArea.clearRect(0,0,w,h);for(let i=0;i<particles.length;i++){particles[i].update();particles[i].draw();}
 for(let i=0;i<particles.length;i++){linkPoints(particles[i],particles);}}
 
-const canvasBody=document.getElementById("canvas"),drawArea=canvasBody.getContext("2d");let delay=200,tid,rgb=opts.lineColor.match(/\d+/g);resizeReset();setup();
+const canvasBody=document.getElementById("canvas");const drawArea=canvasBody.getContext("2d");let delay=200,tid,rgb=opts.lineColor.match(/\d+/g);resizeReset();setup();
 }
 
 /*************************
