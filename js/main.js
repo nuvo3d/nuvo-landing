@@ -123,7 +123,7 @@ Particle=function(xPos,yPos){this.x=Math.random()*w;this.y=Math.random()*h;this.
 if(this.y>=h||this.y<=0){this.vector.y*=-1;}
 if(this.x>w)this.x=w;if(this.y>h)this.y=h;if(this.x<0)this.x=0;if(this.y<0)this.y=0;};this.draw=function(){drawArea.beginPath();drawArea.arc(this.x,this.y,this.radius,0,Math.PI*2);drawArea.closePath();drawArea.fillStyle=this.color;drawArea.fill();};};let setup=function(){particles=[];resizeReset();for(let i=0;i<opts.particleAmount;i++){particles.push(new Particle());}
 window.requestAnimationFrame(loop);}
-function loop(){window.requestAnimationFrame(loop);drawArea.clearRect(0,0,w,h);for(let i=0;i<particles.length;i++){particles[i].update();particles[i].draw();}
+var loop = function(){window.requestAnimationFrame(loop);drawArea.clearRect(0,0,w,h);for(let i=0;i<particles.length;i++){particles[i].update();particles[i].draw();}
 for(let i=0;i<particles.length;i++){linkPoints(particles[i],particles);}}
 
 const canvasBody=document.getElementById("canvas");const drawArea=canvasBody.getContext("2d");let delay=200,tid,rgb=opts.lineColor.match(/\d+/g);resizeReset();setup();
