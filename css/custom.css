@@ -1,3 +1,7 @@
 .menu-mobile-collapse-trigger {
     display:none!important;
 }
+
+.feature-icon {
+    height: 70px;
+}
