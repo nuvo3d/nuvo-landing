@@ -5,3 +5,7 @@
 .feature-icon {
     height: 70px;
 }
+
+.iq-special-1 .iq-box:before {
+    background: rgba(12, 52, 78, 0.88);
+}
