@@ -15,3 +15,7 @@
     height:auto;
     max-width:533px;
 }
+
+.border-3 {
+    border-width:3px !important;
+}
