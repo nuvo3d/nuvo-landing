@@ -340,8 +340,8 @@
     camera = new THREE.PerspectiveCamera(
       39,
       preset_size_w / preset_size_h,
-      2 * object_rescale,
-      6 * object_rescale
+      0.1 * object_rescale,
+      100 * object_rescale
     );
     camera.position.y = 2.0 * object_rescale;
     camera.position.z = 3.464 * object_rescale;
