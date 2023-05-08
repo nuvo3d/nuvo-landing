@@ -1,2 +1,2 @@
-# cax.ai-landing
-Initial Landing Page for cax.ai
+# nuvo-landing
+Initial Landing Page for nuvo.cam
